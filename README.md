@@ -2,18 +2,13 @@
 
 * Change default settings (user profile, password, and library) to your environment in cli-config.php
 
-* Create a library/schema for development
-```sql
-CREATE SCHEMA MYLIB IN ASP 1;
-CL:CHGLIB LIB(MYLIB) TEXT('Database for My Application') ;
-```
+* Create a library/schema for development and a table to track migrations by running setup.sql
 
-* Create a table to track migrations
-```sql
-CREATE TABLE MYLIB.MIGRATIONS
-(
-    VERSION varchar(255)
-);
+* download composer by running setup.sh
+
+* run composer 
+```sh
+php composer.phar install
 ```
 
 * Generate first empty migration class
