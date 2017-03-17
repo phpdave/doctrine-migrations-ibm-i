@@ -1,0 +1,14 @@
+{
+    "name": "chukShirley/doctrine-migrations-ibm-i",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Chuk Shirley",
+            "email": "chukShirley@gmail.com"
+        }
+    ],
+    "require": {
+        "alanseiden/doctrine-dbal-ibmi": "^0.0.6",
+        "doctrine/migrations": "^1.5"
+    }
+}
