@@ -15,3 +15,6 @@ php composer.phar install
 ```bash
 $ vendor/bin/doctrine-migrations migrations:generate
 ```
+
+* bad HACK needed if you dont have PDO
+Remove all references to PDO in https://github.com/doctrine/dbal/blob/master/lib/Doctrine/DBAL/Connection.php#L24
